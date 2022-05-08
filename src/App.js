@@ -11,9 +11,16 @@ const API_URL = "http://www.omdbapi.com?apikey=3c315337"; // FIXME
 const App = () => {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [spinner, setSpinner] = useState(true);
 
   useEffect(() => {
     searchMovies("batman");
+  }, []);
+
+  // It will be executed before rendering
+
+  useEffect(() => {
+    setTimeout(() => setSpinner(false), 1000);
   }, []);
 
   const searchMovies = async (title) => {
@@ -48,6 +55,8 @@ const App = () => {
           onClick={() => searchMovies(searchTerm)}
         />
       </div>
+
+      {spinner && <h2 className="loading">Loading...</h2>}
 
       {movies?.length > 0 ? (
         <div className="container">

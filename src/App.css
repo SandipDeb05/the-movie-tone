@@ -82,6 +82,9 @@ h1 {
   color: #f9d3b4;
   font-family: var(--font-raleway);
 }
+.loading {
+  color: #f0f0f0;
+}
 
 .container {
   width: 100%;
@@ -91,6 +94,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
 .movie {

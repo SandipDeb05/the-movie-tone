@@ -61,9 +61,11 @@ const App = () => {
           ))}
         </div>
       ) : (
-        <div className="empty">
-          <h2>Sorry🙁! No movies found</h2>
-        </div>
+        !spinner && (
+          <div className="empty">
+            <h2>Sorry🙁! No movies found</h2>
+          </div>
+        )
       )}
 
       <div className="footer">

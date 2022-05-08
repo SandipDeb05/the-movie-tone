@@ -23,6 +23,12 @@ const App = () => {
     console.log(data);
   };
 
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      searchMovies(searchTerm);
+    }
+  };
+
   return (
     <div className="app">
       <h1 onClick={() => searchMovies("batman")}>The Movie Tone</h1>
@@ -34,6 +40,7 @@ const App = () => {
           onChange={(e) => {
             setSearchTerm(e.target.value);
           }}
+          onKeyPress={handleKeyPress}
         />
         <img
           src={SearchIcon}

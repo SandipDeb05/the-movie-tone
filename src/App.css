@@ -29,15 +29,9 @@ body {
 h1 {
   font-size: 3rem;
   letter-spacing: 0.9px;
-  background: linear-gradient(
-    90deg,
-    rgba(249, 211, 180, 1) 0%,
-    rgba(249, 211, 180, 0) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgba(249, 211, 180, 1);
   width: fit-content;
+  cursor: pointer;
 }
 
 .search {
@@ -185,6 +179,14 @@ h1 {
   text-align: center;
 }
 
+.icon {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 15px;
+  margin-top: 10px;
+  color: rgba(249, 211, 180, 1);
+}
+
 @media screen and (max-width: 600px) {
   .app {
     padding: 4rem 2rem;
@@ -221,5 +223,10 @@ h1 {
   .movie {
     width: "100%";
     margin: 1rem;
+  }
+  .icon {
+    font-size: 18px;
+    margin-right: 14px;
+    margin-top: 7px;
   }
 }

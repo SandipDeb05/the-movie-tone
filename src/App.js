@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard";
 import "./App.css";
@@ -25,7 +25,8 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>MoviePedia</h1>
+      <h1 onClick={() => searchMovies("batman")}>The Movie Tone</h1>
+
       <div className="search">
         <input
           placeholder="Search your favourite Movies"
@@ -54,7 +55,19 @@ const App = () => {
       )}
 
       <div className="footer">
-        <p>Coded by Sandip Deb</p>
+        <p>Coded by Sandip Deb </p>
+        <a
+          href="https://www.linkedin.com/in/sandip-deb-8b76b2157/"
+          target={"_blank"}
+        >
+          <BsLinkedin className="icon " />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/sandip-deb-8b76b2157/"
+          target={"_blank"}
+        >
+          <BsGithub className="icon" />
+        </a>
       </div>
     </div>
   );

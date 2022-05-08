@@ -22,9 +22,11 @@ const App = () => {
   }, []);
 
   const searchMovies = async (title) => {
+    setSpinner(true);
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
     setMovies(data.Search);
+    setSpinner(false);
     console.log(data);
   };
 

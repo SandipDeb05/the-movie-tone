@@ -83,7 +83,7 @@ h1 {
   font-family: var(--font-raleway);
 }
 .loading {
-  color: #f0f0f0;
+  color: rgb(249, 211, 180);
 }
 
 .container {

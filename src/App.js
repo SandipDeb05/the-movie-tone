@@ -14,13 +14,11 @@ const App = () => {
   const [spinner, setSpinner] = useState(true);
 
   useEffect(() => {
-    searchMovies("batman");
+    setTimeout(() => setSpinner(false), 1000);
   }, []);
 
-  // It will be executed before rendering
-
   useEffect(() => {
-    setTimeout(() => setSpinner(false), 1000);
+    searchMovies("batman");
   }, []);
 
   const searchMovies = async (title) => {
@@ -42,7 +40,7 @@ const App = () => {
 
       <div className="search">
         <input
-          placeholder="Search your favourite Movies"
+          placeholder="Search your favourite movies"
           value={searchTerm}
           onChange={(e) => {
             setSearchTerm(e.target.value);
@@ -78,10 +76,7 @@ const App = () => {
         >
           <BsLinkedin className="icon " />
         </a>
-        <a
-          href="https://www.linkedin.com/in/sandip-deb-8b76b2157/"
-          target={"_blank"}
-        >
+        <a href="https://github.com/SandipDeb05" target={"_blank"}>
           <BsGithub className="icon" />
         </a>
       </div>

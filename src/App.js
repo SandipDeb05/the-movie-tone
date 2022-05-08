@@ -14,10 +14,6 @@ const App = () => {
   const [spinner, setSpinner] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setSpinner(false), 1000);
-  }, []);
-
-  useEffect(() => {
     searchMovies("batman");
   }, []);
 

@@ -21,7 +21,7 @@ const Footer = () => {
           target={"_blank"}
           className="footer-link"
         >
-          ODMB API
+          OMDB API
         </a>
         .
       </p>

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
-import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard";
 import "./App.css";
+import Footer from "./components/Footer";
+import SearchInput from "./components/SearchInput";
 
 //TODO API KEY : 3c315337
 
-const API_URL = "http://www.omdbapi.com?apikey=3c315337"; // FIXME
+const API_URL = "http://www.omdbapi.com?apikey=3c315337";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -26,31 +26,15 @@ const App = () => {
     console.log(data);
   };
 
-  const handleKeyPress = (e) => {
-    if (e.key === "Enter") {
-      searchMovies(searchTerm);
-    }
-  };
-
   return (
     <div className="app">
       <h1 onClick={() => searchMovies("batman")}>The Movie Tone</h1>
 
-      <div className="search">
-        <input
-          placeholder="Search your favourite movies"
-          value={searchTerm}
-          onChange={(e) => {
-            setSearchTerm(e.target.value);
-          }}
-          onKeyPress={handleKeyPress}
-        />
-        <img
-          src={SearchIcon}
-          alt="search"
-          onClick={() => searchMovies(searchTerm)}
-        />
-      </div>
+      <SearchInput
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        searchMovies={searchMovies}
+      />
 
       {spinner && <h2 className="loading">Loading...</h2>}
 
@@ -68,18 +52,7 @@ const App = () => {
         )
       )}
 
-      <div className="footer">
-        <p>Coded by Sandip Deb </p>
-        <a
-          href="https://www.linkedin.com/in/sandip-deb-8b76b2157/"
-          target={"_blank"}
-        >
-          <BsLinkedin className="icon " />
-        </a>
-        <a href="https://github.com/SandipDeb05" target={"_blank"}>
-          <BsGithub className="icon" />
-        </a>
-      </div>
+      <Footer />
     </div>
   );
 };

@@ -26,9 +26,14 @@ const App = () => {
     console.log(data);
   };
 
+  const headingLinkHandler = () => {
+    searchMovies("batman");
+    setSearchTerm("");
+  };
+
   return (
     <div className="app">
-      <h1 onClick={() => searchMovies("batman")}>The Movie Tone</h1>
+      <h1 onClick={headingLinkHandler}>The Movie Tone</h1>
 
       <SearchInput
         searchTerm={searchTerm}

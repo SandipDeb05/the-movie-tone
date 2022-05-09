@@ -183,6 +183,11 @@ h1 {
   text-align: center;
 }
 
+.footer-link {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
 .icon {
   color: #fff;
   font-size: 20px;

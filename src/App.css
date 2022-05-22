@@ -14,7 +14,8 @@
   --font-rubik: "Rubik Wet Paint", serif;
 
   --primary-bg-color: #212426;
-  --primary-txt-color: #f9d3b4;
+  /* --primary-txt-color: #f9d3b4; */
+  --primary-txt-color: #95f550be;
   --primary-shadow-color: #0000001a;
   --secondary-bg-color: #343739;
   --secondary-txt-color: #f0f0f0;
@@ -60,6 +61,7 @@ h1 {
   cursor: pointer;
   font-family: var(--font-rubik);
   letter-spacing: 3px;
+  text-shadow: 1px 1px 5px #000;
 }
 
 .search {

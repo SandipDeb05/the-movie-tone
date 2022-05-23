@@ -1,6 +1,6 @@
 # The Movie Tone Web App.
 
-![](https://img.shields.io/badge/React-17.0.2-%20%2361dafb)
+![](https://img.shields.io/badge/React-17.0.2-%230269A4)
 ![](https://img.shields.io/badge/npm-8.1.2-%23cb3837)
 ![](https://img.shields.io/badge/Dependencies-Up%20to%20Date-%234cc61e)
 

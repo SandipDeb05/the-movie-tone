@@ -17,7 +17,7 @@ With Modern web design, react best practices, proper react file and folder struc
 
 - If the movie, series, game exist in the API then all the data with the matching name is fetched from the API and displayed in the application inside of a card.
   - If the title name is not present in the API then "Movie not found" message will be shown.
-- While the title name is getting searched in the API a Loading message is show.
+- While the title name is getting searched in the API, a Loading message is show.
 - The data that is comming from the OMDB API are the title, poster, category, and the release year
 
 ### Credits

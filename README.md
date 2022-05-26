@@ -20,6 +20,6 @@ With Modern web design, react best practices, proper react file and folder struc
 - While the title name is getting searched in the API, a Loading message is show.
 - The data that is comming from the OMDB API are the title, poster, category, and the release year.
 
-### Credits
+##### Credits
 
-This project is built by following [JavaScript Mastery](https://www.youtube.com/c/JavaScriptMastery) Youtube channel for learning purposes.
+This project was built under the guidance of [JavaScript Mastery](https://www.youtube.com/c/JavaScriptMastery) Youtube channel for learning purposes.

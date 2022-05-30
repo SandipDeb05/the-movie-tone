@@ -9,7 +9,7 @@ const Footer = () => {
       <p>
         Coded by{" "}
         <a
-          href="https://sandipdeb.netlify.app/"
+          href="https://sandipdeb.vercel.app/"
           className="footer-link"
           target={"_blank"}
         >

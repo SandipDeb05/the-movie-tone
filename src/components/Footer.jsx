@@ -12,6 +12,7 @@ const Footer = () => {
           href="https://sandipdeb.vercel.app/"
           className="footer-link"
           target={"_blank"}
+          rel={"noopener noreferrer"}
         >
           Sandip Deb
         </a>{" "}
@@ -19,6 +20,7 @@ const Footer = () => {
         <a
           href="https://www.omdbapi.com/"
           target={"_blank"}
+          rel={"noopener noreferrer"}
           className="footer-link"
         >
           OMDB API
@@ -28,10 +30,15 @@ const Footer = () => {
       <a
         href="https://www.linkedin.com/in/sandip-deb-8b76b2157/"
         target={"_blank"}
+        rel={"noopener noreferrer"}
       >
         <BsLinkedin className="icon " />
       </a>
-      <a href="https://github.com/SandipDeb05" target={"_blank"}>
+      <a
+        href="https://github.com/SandipDeb05"
+        target={"_blank"}
+        rel={"noopener noreferrer"}
+      >
         <BsGithub className="icon" />
       </a>
     </div>
